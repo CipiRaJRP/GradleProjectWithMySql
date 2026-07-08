@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public record Order(
         String name,
         int quantity,
-        double price,
+        long price,
         String status,
         LocalDate date_on,
         boolean refunded

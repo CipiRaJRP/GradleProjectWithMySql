@@ -40,7 +40,7 @@ public class OrderRepository {
                          connection.prepareStatement(orderSql, Statement.RETURN_GENERATED_KEYS)) {
 
                 orderStatement.setString(1, order.status());
-                orderStatement.setDouble(2, order.price());
+                orderStatement.setLong(2, order.price());
                 orderStatement.setDate(3, Date.valueOf(order.date_on()));
                 orderStatement.setBoolean(4, order.refunded());
 

@@ -18,7 +18,7 @@ public class OrderStructureTest {
 
         assertEquals("SKU-1",order.name());
         assertEquals(1,order.quantity());
-        assertEquals(1299.00,order.price());
+        assertEquals(1299_00,order.price());
         assertEquals("NEW",order.status());
         assertEquals(LocalDate.now(),order.date_on());
         assertEquals(false,order.refunded());

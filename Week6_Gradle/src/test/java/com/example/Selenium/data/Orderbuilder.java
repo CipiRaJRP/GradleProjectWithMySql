@@ -10,7 +10,7 @@ import java.time.LocalDate;
 public class Orderbuilder {
     private String name = "SKU-1";
     private int   quantity = 1;
-    private double price = 1299.00;
+    private long  price = 1299_00;
     private String status = "NEW";
     private LocalDate date_on = LocalDate.now();
     private boolean refunded = false;
@@ -32,7 +32,7 @@ public class Orderbuilder {
         return this;
     }
 
-    public Orderbuilder withPrice(double price){
+    public Orderbuilder withPrice(long price){
         this.price = price;
         return this;
     }
