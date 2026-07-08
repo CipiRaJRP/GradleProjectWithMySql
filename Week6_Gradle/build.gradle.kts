@@ -78,7 +78,11 @@ fun Test.useProjectTestClasses() {
     classpath = sourceSets.test.get().runtimeClasspath
 }
 
-
+tasks.test {
+    description = "Run the tests"
+    include("**/OrderTestIT.class")
+    maxParallelForks = 1
+}
 val catalogPOMTest by tasks.registering(Test::class) {
     description = "Runs the CatalogPOM Test."
     group = "verification"
