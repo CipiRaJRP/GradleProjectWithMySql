@@ -78,7 +78,7 @@ fun Test.useProjectTestClasses() {
     classpath = sourceSets.test.get().runtimeClasspath
 }
 
-tasks.test {
+tasks.test{
     description = "Run the tests"
     include("**/OrderTestIT.class")
     maxParallelForks = 1
