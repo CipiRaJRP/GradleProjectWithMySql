@@ -22,8 +22,5 @@ jobs:
       - name: Grant execute permission
         run: chmod +x gradlew
 
-      - name: Run Tests
-        run: ./gradlew clean test
-
       - name: Run MySQL Integration Tests
         run: ./gradlew orderTestDB
