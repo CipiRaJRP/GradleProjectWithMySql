@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.Selenium.bdd.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 17.38 s -- in com.example.Selenium.bdd.RunCucumberTest
