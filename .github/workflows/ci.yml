@@ -20,7 +20,8 @@ jobs:
           cache: gradle
 
       - name: Grant execute permission
-        run: chmod +x gradlew
+        run: chmod +x Week6_Gradle/gradlew
 
       - name: Run MySQL Integration Tests
+        working-directory: Week6_Gradle
         run: ./gradlew orderTestDB
