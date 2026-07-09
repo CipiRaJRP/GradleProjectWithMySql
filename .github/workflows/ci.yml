@@ -15,7 +15,7 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '22'
-          cache: 'maven'
+          cache: 'gradle'
 
       - name: 3. Start Docker
         working-directory: Week6_Gradle
