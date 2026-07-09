@@ -1,6 +1,6 @@
 plugins {
     java
-   
+    id("io.qameta.allure") version "2.12.0"
 }
 
 group = "com.example.Selenium"
@@ -24,6 +24,8 @@ java {
     targetCompatibility = JavaVersion.VERSION_22
 }
 
+
+
 dependencies {
     testImplementation(platform("org.junit:junit-bom:$junitVersion"))
     testImplementation(platform("io.cucumber:cucumber-bom:$cucumberVersion"))
@@ -36,6 +38,7 @@ dependencies {
     testImplementation("io.cucumber:cucumber-java")
     testImplementation("io.cucumber:cucumber-junit-platform-engine")
     testImplementation("io.cucumber:cucumber-picocontainer")
+    testImplementation("io.qameta.allure:allure-junit5")
     testImplementation("org.junit.platform:junit-platform-suite")
     testImplementation("io.qameta.allure:allure-cucumber7-jvm")
     testImplementation("com.aventstack:extentreports:$extentVersion")
@@ -82,6 +85,8 @@ fun Test.useProjectTestClasses() {
 tasks.test{
     description = "Run the tests"
     include("**/OrderTestIT.class")
+    include("**/RefactoringTest.class")
+    include("**/AllureReporting.class")
     maxParallelForks = 1
 }
 val catalogPOMTest by tasks.registering(Test::class) {
@@ -127,6 +132,15 @@ val orderTestDB by tasks.registering(Test::class) {
     useProjectTestClasses()
     useJUnitPlatform()
     include("**/OrderTestIT.class")
+    maxParallelForks = 1
+}
+
+val allureReportTest by tasks.registering(Test::class) {
+    description = "Reporting the Results of Flaky,broken"
+    group = "verification"
+    useProjectTestClasses()
+    useJUnitPlatform()
+    include("**/AllureReporting.class")
     maxParallelForks = 1
 }
 
