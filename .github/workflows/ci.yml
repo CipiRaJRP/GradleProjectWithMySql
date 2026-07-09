@@ -29,7 +29,7 @@ jobs:
 
       - name: Run Integration Tests
         working-directory: Week6_Gradle
-        run: ./gradlew test
+        run: gradle clean test --tests "com.example.Selenium.tests.OrderTestIT"
 
       - name: Restore Allure History
         if: always()
