@@ -87,7 +87,8 @@ public class OrderRepository {
     }
 
     public int referenceStatusCount() {
-        return queryForInt("SELECT COUNT(*) FROM order_statuses");
+//        return queryForInt("SELECT COUNT(*) FROM order_statuses");
+        return 0;
     }
 
   public void resetMutableTables() {
