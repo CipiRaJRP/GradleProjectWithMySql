@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","130","resetMakesTestOrderIndependent()","","2026-07-10","passed","2026-07-10","","com.example.Selenium.tests.OrderTestIT","com.example.Selenium.tests.OrderTestIT","resetMakesTestOrderIndependent"
+"","69","flywaySeedingReferenceDataButNoPerTestOrders()","","2026-07-10","passed","2026-07-10","","com.example.Selenium.tests.OrderTestIT","com.example.Selenium.tests.OrderTestIT","flywaySeedingReferenceDataButNoPerTestOrders"
+"","94","countsOnlyPersistedTestOrders()","","2026-07-10","failed","2026-07-10","","com.example.Selenium.tests.OrderTestIT","com.example.Selenium.tests.OrderTestIT","countsOnlyPersistedTestOrders"
+"","141","persistedBuilderDataAgainstIsolatedMysql()","","2026-07-10","passed","2026-07-10","","com.example.Selenium.tests.OrderTestIT","com.example.Selenium.tests.OrderTestIT","persistedBuilderDataAgainstIsolatedMysql"
