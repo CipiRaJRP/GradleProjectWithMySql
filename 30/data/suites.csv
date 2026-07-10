@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","120","persistedBuilderDataAgainstIsolatedMysql()","","2026-07-10","failed","2026-07-10","","com.example.Selenium.tests.OrderTestIT","com.example.Selenium.tests.OrderTestIT","persistedBuilderDataAgainstIsolatedMysql"
+"","109","countsOnlyPersistedTestOrders()","","2026-07-10","passed","2026-07-10","","com.example.Selenium.tests.OrderTestIT","com.example.Selenium.tests.OrderTestIT","countsOnlyPersistedTestOrders"
+"Categories split flaky,test and product","26","categoriesPutGenericFlakyRules()","","2026-07-10","passed","2026-07-10","","com.example.Selenium.reporting.AllureReporting","com.example.Selenium.reporting.AllureReporting","categoriesPutGenericFlakyRules"
+"","59","flywaySeedingReferenceDataButNoPerTestOrders()","","2026-07-10","failed","2026-07-10","","com.example.Selenium.tests.OrderTestIT","com.example.Selenium.tests.OrderTestIT","flywaySeedingReferenceDataButNoPerTestOrders"
+"","0","resetMakesTestOrderIndependent()","","2026-07-10","skipped","2026-07-10","","com.example.Selenium.tests.OrderTestIT","com.example.Selenium.tests.OrderTestIT","resetMakesTestOrderIndependent"
+"","8","Refracting Test case","","2026-07-10","passed","2026-07-10","","com.example.Selenium.tests.RefactoringTest","com.example.Selenium.tests.RefactoringTest","refractoringTheExistingProject"
