@@ -13,9 +13,8 @@
   "name": "Product defects",
   "matchedStatuses": ["failed"]
 },
-
-  {
+{
     "name": "Test Skipped",
     "matchedStatuses": ["skipped"]
-  }
+}
 ]

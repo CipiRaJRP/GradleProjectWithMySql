@@ -111,8 +111,8 @@ public class OrderRepository {
              ResultSet resultSet = statement.executeQuery(sql)) {
 
             resultSet.next();
-           // return resultSet.getInt(1);
-            return 0;
+            return resultSet.getInt(1);
+
 
         } catch (SQLException e) {
             throw new IllegalStateException("Could not run count query", e);
@@ -126,6 +126,10 @@ public class OrderRepository {
             }
             return keys.getLong(1);
         }
+    }
+
+    public void makeBroke() throws Exception{
+        throw new Exception();
     }
 
     private Connection connection() throws SQLException {

@@ -76,4 +76,9 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
          assertEquals(1,repository.countByStatus("REFUNDED"));
     }
 
+    @Test
+    void makeATestBroken() throws Exception {
+         repository.makeBroke();
+    }
+
 }
