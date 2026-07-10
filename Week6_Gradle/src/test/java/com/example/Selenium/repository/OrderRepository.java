@@ -92,14 +92,13 @@ public class OrderRepository {
     }
 
   public void resetMutableTables() {
-      String sql = "TRUNCATE retail_order_items, retail_orders RESTART IDENTITY CASCADE";
         try (Connection connection = connection();
              Statement statement = connection.createStatement()) {
-               statement.execute(sql);
-//            statement.execute("SET FOREIGN_KEY_CHECKS = 0");
-//            statement.execute("TRUNCATE TABLE retail_order_items");
-//            statement.execute("TRUNCATE TABLE retail_orders");
-//            statement.execute("SET FOREIGN_KEY_CHECKS = 1");
+
+            statement.execute("SET FOREIGN_KEY_CHECKS = 0");
+            statement.execute("TRUNCATE TABLE retail_order_items");
+            statement.execute("TRUNCATE TABLE retail_orders");
+            statement.execute("SET FOREIGN_KEY_CHECKS = 1");
  
         } catch (SQLException e) {
             throw new IllegalStateException("Could not reset order test data", e);
