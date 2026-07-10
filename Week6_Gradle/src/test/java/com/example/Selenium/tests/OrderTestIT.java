@@ -44,8 +44,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
          repository.resetMutableTables();
      }
 
+
+
      @Test
      void flywaySeedingReferenceDataButNoPerTestOrders(){
+         System.exit(1);
+
          assertEquals(4,repository.referenceStatusCount());
          assertEquals(0,repository.count());
      }
