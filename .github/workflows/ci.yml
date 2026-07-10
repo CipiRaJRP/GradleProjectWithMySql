@@ -34,7 +34,7 @@ jobs:
 
       - name: Run Integration Tests
         working-directory: Week6_Gradle
-        run: ./gradlew test --tests "com.example.Selenium.tests.OrderTestIT" --no-configuration-cache
+        run: ./gradlew test
 
       - name: Checkout gh-pages branch
         if: always()
@@ -67,3 +67,4 @@ jobs:
           branch: gh-pages
           folder: allure-history
           token: ${{ secrets.GITHUB_TOKEN }}
+
